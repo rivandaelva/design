@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="stylecss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+   <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-header">
+            <h3>M<span>odern</span></h3>
+        </div>
+        
+        <div class="side-content">
+            <div class="profile">
+                <div class="profile-img bg-img" style="background-image: url(bruno.jpg)"></div>
+                <h4>Web Design</h4>
+                <small>Art Director</small>
+            </div>
+
+            <div class="side-menu">
+                <ul>
+                    <li>
+                       <a href="INDEX.html" class="active">
+                            <span class="las la-home"></span>
+                            <small>Dashboard</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="profile.html">
+                            <span class="las la-user-alt"></span>
+                            <small>Profile</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="mailbox.html">
+                            <span class="las la-envelope"></span>
+                            <small>Mailbox</small>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="user">
+                <a href="login.html">
+                    <span class="las la-power-off"></span>
+                    <span class="logout">Logout</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        
+        <header>
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                
+                <div class="header-menu">
+                    <label for="">
+                        <span class="las la-search"></span>
+                    </label>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-envelope"></span>
+                        <span class="notify">4</span>
+                    </div>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-bell"></span>
+                        <span class="notify">3</span>
+                    </div>
+                    
+                    <div class="user">
+                        <div class="bg-img" style="background-image: url(logout.jpeg)"></div>
+                        
+                        <span class="las la-power-off"></span>
+                        <span>Logout</span>
+                    </div>
+                </div>
+            </div>
+        </header> 
+        <main>
+            
+            <div class="page-header">
+                <h1>Dashboard</h1>
+                <small>Home / Dashboard</small>
+            </div>
+            
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-lg-8 mb-4">
+                        <div class="card shadow ">
+                            DATA 
+                        </div>
+                        <div class="container">
+                            <form class="data" action="contact.php" method="POST">
+                                <fieldset>
+                                <p>
+                                    <label>Nama:</label>
+                                    <input type="text" name="nama" placeholder="Nama lengkap..." />
+                                </p>
+                                <p>
+                                    <label>Username:</label>
+                                    <input type="text" name="username" placeholder="Username..." />
+                                </p>
+                                <p>
+                                    <label>Email:</label>
+                                    <input type="email" name="email" placeholder="Your email..." />
+                                </p>
+                                <p>
+                                    <label>Password:</label>
+                                    <input type="password" name="password" placeholder="Passowrd..." />
+                                </p>
+                                <p>
+                                    <label>Jenis kelamin:</label>
+                                    <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+                                    <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+                                </p>
+                                <p>
+                                    <label>Agama:</label>
+                                    <select name="agama">
+                                        <option value="islam">Islam</option>
+                                        <option value="kristen">Kristen</option>
+                                        <option value="hindu">Hindu</option>
+                                        <option value="budha">Budha</option>
+                                    </select>
+                                </p>
+                                <p>
+                                   
+                                </p>
+                                <p>
+                                    <input type="submit" name="submit" value="Submit" />
+                                </p>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            FOTO PROFIL
+                            <img src="bunga.jpg" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
